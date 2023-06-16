@@ -1,4 +1,244 @@
 :root {
-    bg: #1F2937;
+    --bg-dark: #1F2937;
+    --text-secondary: #E5E7EB;
 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: var(--bg-dark);
+    width: 100%;
+    padding: 10px 15%;
+    height: fit-content;
+}
+
+header .brand {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.hero {
+    padding: 95px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hero .content,
+.hero .hero_img {
+    flex: 1 1 250px;
+}
+
+.hero_img img {
+    width: 100%;
+    height: auto;
+}
+
+.hero .content h1 {
+    color: #F9FAF8;
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.hero .content p {
+    font-size: 18px;
+    color: var(--text-secondary);
+
+
+}
+
+
+.hero .content .btn {
+    color: var(--text-secondary);
+    background-color: #3882f6;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* main */
+
+/* info section */
+main .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 40px 30px 80px 30px;
+
+}
+
+main .info .container {
+    width: 80%;
+    max-width: 90%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+}
+
+main .info .container .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    flex: 1 1 200px;
+
+}
+
+.item img {
+    object-fit: cover;
+    border: 1px solid white;
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    padding: 5px 0px;
+}
+
+.item p {
+    text-align: center;
+    width: 150px;
+    color: rgb(64, 64, 64);
+}
+
+
+
+
+
+
+/* quote section */
+
+
+
+main .quote {
+
+    background-color: var(--text-secondary);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+main .quote .content {
+    width: 50%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.quote .content p {
+    font-style: italic;
+    flex: 1;
+    font-size: 36px;
+    font-weight: light;
+    color: var(--bg-dark);
+}
+
+.quote p.author {
+    width: fit-content;
+    align-self: flex-end;
+    font-size: 25px;
+    padding-right: 15px;
+}
+
+
+
+
+
+/* Sign up Section */
+
+section.signup {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5% 1%;
+}
+
+.signup .content {
+    background-color: #3882f6;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4% 5%;
+    border-radius: 20px;
+}
+
+.signup .content .text {
+    color: white;
+}
+
+.signup .content .text h2 {
+    margin: 5px 0px;
+}
+
+.signup .content button {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px 20px;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+
+}
+
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+    height: 100px;
+    background-color: var(--bg-dark);
+}
+
+footer p {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: larger;
 }
