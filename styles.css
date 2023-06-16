@@ -129,6 +129,7 @@ main .info .container .item {
     height: 150px;
     border-radius: 5%;
     padding: 5px 0px;
+    mix-blend-mode: color;
 }
 
 .item p {
